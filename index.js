@@ -3,7 +3,7 @@ const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 
-let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
 if(leadsFromLocalStorage) { 
     myLeads = leadsFromLocalStorage
@@ -26,10 +26,17 @@ function renderLeads() {
         listItems += `
             <li>
                 <a target='_blank' href='${myLeads[i]}'>
-                    ${myLeads[i]}
+                    ${myLeads[i]} 
                 </a>
-            </li>
+                 ${"🗑️"}
+            </li>   
         `
     }
     ulEl.innerHTML = listItems  
 }
+
+
+// function deleteButton() { 
+//     if icon is clicked, pop this listItem, remove it from the list 
+//     add an icon 🗑️
+// }
