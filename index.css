@@ -23,7 +23,7 @@ input {
     
 }
 
-#delete-btn { 
+#deleteAll-btn { 
     background: white;
     color: #5f9341;
     padding: 10px 20px;
@@ -32,10 +32,12 @@ input {
     cursor: pointer;
 }
 
-#delete-btn:hover { 
+#deleteAll-btn:hover { 
     background-color: #5f9341;
     color: white;
 }
+
+
 
 ul {
     margin-top: 20px;
