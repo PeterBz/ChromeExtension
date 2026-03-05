@@ -26,7 +26,7 @@ input {
 #deleteAll-btn { 
     background: white;
     color: #5f9341;
-    padding: 10px 20px;
+    padding: 9px 19px;
     border: 1px solid #5f9341;
     font-weight: bold;
     cursor: pointer;
@@ -36,8 +36,6 @@ input {
     background-color: #5f9341;
     color: white;
 }
-
-
 
 ul {
     margin-top: 20px;
@@ -59,4 +57,13 @@ a {
     cursor: pointer;
     padding: 0 2px;
     align-content: left;
+}
+
+#tab-btn { 
+    background: #5f9341;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
 }
