@@ -1,39 +1,67 @@
 body {
     margin: 0;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    min-width: 400px;
+    padding: 20px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    min-width: 350px;
+    background-color: #1a1a2e; 
+    color: #e2e2e2;
 }
 
 input {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     box-sizing: border-box;
-    border: 1px solid #5f9341;
-    margin-bottom: 4px;
+    background-color: #16213e;
+    border: 1px solid #0f3460;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    color: white;
+    outline: none;
+    transition: border-color 0.3s;
 }
 
-#input-btn {
-    background: #5f9341;
-    color: white;
-    padding: 10px 20px;
+input:focus {
+    border-color: #e94560; 
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 12px;
     border: none;
-    font-weight: bold;
+    border-radius: 6px;
+    font-weight: 600;
     cursor: pointer;
-    
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+#input-btn, #tab-btn {
+    flex: 1;
+    background: #0f3460;
+    color: #e2e2e2;
+}
+
+#input-btn:hover, #tab-btn:hover {
+    background-color: #16213e;
+    box-shadow: 0 0 10px rgba(15, 52, 96, 0.5);
 }
 
 #deleteAll-btn { 
-    background: white;
-    color: #5f9341;
-    padding: 9px 19px;
-    border: 1px solid #5f9341;
-    font-weight: bold;
-    cursor: pointer;
+    width: 100%;
+    background: transparent;
+    color: #e94560;
+    border: 1px solid #e94560;
 }
 
 #deleteAll-btn:hover { 
-    background-color: #5f9341;
+    background-color: #e94560;
     color: white;
 }
 
@@ -44,26 +72,36 @@ ul {
 }
 
 li {
+    background: #16213e;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 8px;
     display: flex;
-    margin-top: 5px;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #0f3460; 
 }
 
 a {
-    color: #5f9341;
+    color: #4cc9f0; 
+    text-decoration: none;
+    word-break: break-all;
+    font-size: 14px;
 }
+
+a:hover {
+    color: #e94560;
+}
+
 .delete-single {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0 2px;
-    align-content: left;
+    filter: grayscale(1); 
+    transition: filter 0.2s, transform 0.2s;
 }
 
-#tab-btn { 
-    background: #5f9341;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
+.delete-single:hover {
+    filter: grayscale(0);
+    transform: scale(1.3);
 }
